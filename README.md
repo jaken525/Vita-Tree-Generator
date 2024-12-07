@@ -8,8 +8,8 @@ Very simple tree generator for PS Vita.
 
 # Build
 ```shell
-git clone https://github.com/jaken525/Vita-Landscape-Generator LandscapeVita
-cd LandscapeVita
+git clone https://github.com/jaken525/Vita-Tree-Generator TreeVita
+cd TreeVita
 make
 ```
 
