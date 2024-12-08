@@ -5,7 +5,7 @@
 #include "color.h"
 #include "random.h"
 #include "vita2d.h"
-#include "constants.cpp"
+#include "algorithm"
 #include <vector>
 #include <cmath>
 
@@ -21,23 +21,9 @@ struct Branch
 class Tree
 {
 public:
-    Tree()
-    {
-        start.x = 960 / 2.0f;
-        start.y = 500;
-
-        Generate();
-    }
-
+    Tree();
     void Generate();
     void Draw();
-    void ChangeValues(int _recursionDepth, float _branchProbability, float _baseAngle, int _branchPerNode)
-    {
-        recursionDepth = _recursionDepth;
-        branchProbability = _branchProbability;
-        baseAngle = _baseAngle;
-        branchPerNode = _branchPerNode;
-    }
 
 private:
     point start;
